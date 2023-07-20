@@ -17,5 +17,18 @@ public class BlueRentalPage {
     public WebElement email;
 
     @FindBy (id = "dropdown-basic-button")
-    public WebElement verify;
+    public WebElement loginverify;
+
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement messageVerify;
+
+    @FindBy(xpath = "//*[.='Logout']")
+    public WebElement logOut;
+
+    @FindBy(xpath = "//*[.='OK']")
+    public WebElement ok;
+
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement badCredentials;
+
 }
