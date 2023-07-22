@@ -9,7 +9,7 @@ import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
 public class C04_PozitifTest {
-    @Test
+    @Test(groups = "smoke")
     public void test01() {
 
         //Acceptance Criteria:
@@ -31,6 +31,7 @@ public class C04_PozitifTest {
         Assert.assertTrue(rentalPage.loginverify.getText().contains("Jack"));
 
         //Sayfayı kapatınız
+        Driver.closeDriver();
 
     }
 }
